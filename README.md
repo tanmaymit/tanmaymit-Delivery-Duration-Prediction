@@ -8,27 +8,18 @@ The dataset used in this project contains historical delivery records from DoorD
 Key Features
 
 Time-based features: created_at, actual_delivery_time, hour_of_day, day_of_week, is_weekend
-
 Store-related features: store_id, store_primary_category, order_protocol
-
 Order-related features: total_items, subtotal, num_distinct_items, min_item_price, max_item_price
-
 Market conditions: total_onshift_dashers, total_busy_dashers, total_outstanding_orders
-
 Predictions from other models: estimated_order_place_duration, estimated_store_to_consumer_driving_duration
-
 The target variable is total_delivery_duration_seconds, which represents the total time (in seconds) taken for the delivery.
 
 Data Preprocessing
 
 Converted timestamps to datetime format and extracted relevant time-based features.
-
 Created new features such as dasher_utilization_rate, order_to_dasher_ratio, average_item_price, and price_range.
-
 Encoded categorical variables using LabelEncoder.
-
 Handled missing and infinite values by replacing them with the median.
-
 Standardized numerical features using StandardScaler.
 
 Model Selection & Training
@@ -36,16 +27,12 @@ Model Selection & Training
 We implemented and compared the following machine learning models:
 
 Linear Regression
-
 Random Forest Regressor
-
 XGBoost Regressor
-
 Support Vector Regressor (SVR)
-
 K-Nearest Neighbors (KNN) Regressor
 
-Each model was trained on 80% of the dataset, while 20% was used for testing.
+Each model was trained on 70% of the dataset, while 30% was used for testing.
 
 Model Evaluation
 
@@ -59,71 +46,6 @@ R² Score (coefficient of determination)
 
 Explained Variance Score (EVS)
 
-The results were analyzed and compared to determine the best-performing model.
-
-Results
-
-Model
-
-MAE
-
-RMSE
-
-R² Score
-
-Explained Variance
-
-Linear Regression
-
-X
-
-X
-
-X
-
-X
-
-Random Forest
-
-X
-
-X
-
-X
-
-X
-
-XGBoost
-
-X
-
-X
-
-X
-
-X
-
-SVR
-
-X
-
-X
-
-X
-
-X
-
-KNN
-
-X
-
-X
-
-X
-
-X
-
-(Replace 'X' with actual results after execution.)
 
 Conclusion
 
